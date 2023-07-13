@@ -1,0 +1,69 @@
+/* pages/snake/snake.wxss */
+.textView {
+  display: flex;
+}
+
+.detail {
+  flex: 1;
+  background-color: #bdfdc2;
+  height: 150rpx;
+  margin: 40rpx 20rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  text-align: center;
+  font-size: 35rpx;
+  /* 文字垂直高度 */
+  line-height: 70rpx;
+  /* 圆角边框 */
+  border-radius: 20rpx;
+}
+
+.start {
+  /* 文字垂直高度 */
+  line-height: 150rpx;
+}
+
+.scoredetail:last-child {
+  margin-right: 40rpx;
+}
+
+.mapView {
+  width: 680rpx;
+  height: 800rpx;
+  margin: auto;
+  background-color: #bdfdc2;
+}
+.ground{
+  width: 660rpx;
+  height: 840rpx;
+  margin-left: 40rpx;
+}
+/* 
+  块样式
+*/
+.blocks{
+  width: 30rpx;
+  height: 30rpx;
+  background-color: #ABDDFF;
+  float: left;
+}
+/* 
+  蛇身体所在块样式
+*/
+.block_1{
+  background: blue;
+}
+/* 
+  食物所在块样式
+*/
+.block_2{
+  background: yellow;
+}
+
+/* 
+  行样式
+*/
+.rows{
+  width: 660rpx;
+  height: 30rpx;
+}

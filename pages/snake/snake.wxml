@@ -1,0 +1,17 @@
+<!--pages/snake/snake.wxml-->
+<view class="textView">
+  <view class="start detail" bindtouchend="initGame">开始</view>
+  <view class="score detail">
+    <view>得分</view>
+    <label>{{score}}</label>
+  </view>
+  <view class="history detail">
+    <view>历史最高分</view>
+    <label>{{history}}</label>
+  </view>
+</view>
+<view class="ground" bindtouchstart="tapstart" bindtouchmove="tapmove" bindtouchend="tapend">
+    <view class="rows" wx:for="{{ground}}" wx:for-item="cols" wx:key="key">
+      <view class="blocks block_{{item}}" wx:for="{{cols}}" wx:key="key"></view>
+    </view>
+  </view>
